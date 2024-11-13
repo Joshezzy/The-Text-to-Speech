@@ -1,0 +1,50 @@
+#codes used to call model ni terminal
+tts --text "Hello Stackies and welcome to Getting Started with Speech Synthesis Campaign" --model_name tts_models/en/ek1/tacotron2 --out_path output/output.wav
+
+
+Code Breakdown:
+
+tts --text "<text>": The Coqui TTS command to generate speech from the provided text.
+--model_name <model>: Specifies the model to use for speech synthesis. In the demo, the Tacotron 2 model is used.
+--out_path <file_path>: Saves the generated speech to a file.
+
+
+
+
+###Virtual environment tuff
+
+python3 -m venv .venv
+
+.venv\Scripts\activate  ##For windows
+
+source .venv/bin/activate   ~##Linux or virtual editor.
+
+
+pip install requirement 
+
+pip install -r requirements.txt
+
+
+NOTE: We used tts_models/multilingual/multi-dataset/xtts_v2 model
+
+https://github.com/coqui-ai/STT-models/releases
+
+
+
+
+~~~~~~~~####### TODO TREE    #########~~~~
+
+# TODO#1 - Import the necessary libraries
+# TODO#2 - Load the TTS model
+# TODO#3 - Select the speaker and language
+# TODO#4 - Set output folder and input text
+# TODO#5 - Generate the speech and save it to a WAV file
+
+
+
+Now that you’ve created a basic TTS script, try experimenting with different parameters:
+
+Change the Text: Modify the text variable to test how the TTS model handles various sentences.
+Select a Different Speaker: Adjust the selected_speaker variable to use other speakers available in the model by replacing 0 with other index numbers.
+Change the Language: Modify the selected_language to explore how localization affects the output.
+Vary Output File Names: Set different file_path values to save outputs with different names.
